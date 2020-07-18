@@ -15,6 +15,20 @@ const style = {
         margin: 22px auto;
     `,
     header: css`
+        text-align: center;
+    `,
+    headerImage: css`
+        margin: 33px;
+        border-radius: 300px;
+        @media (min-width: 420px) {
+            width: 380px;
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 380px;
+        }
+        @media (min-width: 1024px) {
+            width: 220px;
+        }
     `,
     headerTitle: css`
         margin:0;
@@ -71,6 +85,7 @@ const App = () => {
             } />
             <div css={style.conteiner}>
                 <header css={style.header}>
+                    <img css={style.headerImage} src="icon.png" />
                     <h1 css={style.headerTitle}>Tadashi Yamazaki's Web Page</h1>
                 </header>
                 <section css={style.outerSection}>
