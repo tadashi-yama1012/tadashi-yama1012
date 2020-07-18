@@ -31,6 +31,8 @@ const headerTitle = css`
 const footer = css`
     text-align:center;
 `;
+const sectionContainer = css`
+`;
 const outerSection = css`
     margin: 18px 0px;
     display: flex;
@@ -62,6 +64,62 @@ const outerSection = css`
         }
     }
 `;
+const outerSectionExpand = css`
+    margin: 18px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 33%;
+    section {
+        width: 100%;
+        margin: 8px;
+        padding: 12px;
+        background-color: white;
+        border-radius: 0.3em;
+        border-top: solid 1px whitesmoke;
+        border-left: solid 1px whitesmoke;
+        border-right: solid 1px silver;
+        border-bottom: solid 1px silver;
+        h2 {
+            margin: 0px;
+            font-size: 17px;
+        }
+        p {
+            margin-top: 5px;
+            font-size: 15px;
+        }
+    }
+`;
+const expandSection = css`
+    margin: 18px 0px;
+    width: 100%;
+    div {
+        display: block;
+        width: 100%;
+        section {
+            width: 100%;
+            margin: 8px;
+            padding: 12px;
+            background-color: white;
+            border-radius: 0.3em;
+            border-top: solid 1px whitesmoke;
+            border-left: solid 1px whitesmoke;
+            border-right: solid 1px silver;
+            border-bottom: solid 1px silver;
+            p.close {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0px;
+            }
+            h2 {
+                margin: 0px;
+            }
+        }
+    }
+`;
+const expandSectionHide = css`
+    display: none;
+`;
 
 export {
     global, 
@@ -70,5 +128,9 @@ export {
     headerImage,
     headerTitle,
     footer,
-    outerSection
+    sectionContainer,
+    outerSection,
+    outerSectionExpand,
+    expandSection,
+    expandSectionHide
 };
